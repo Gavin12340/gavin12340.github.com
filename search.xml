@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title>第一篇文章</title>
-      <link href="/2022/12/28/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0/"/>
-      <url>/2022/12/28/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0/</url>
+      <title>案例4 Power supply电源案例</title>
+      <link href="/2022/11/06/%E6%A1%88%E4%BE%8B4%20Power%20supply%E7%94%B5%E6%BA%90%E6%A1%88%E4%BE%8B/"/>
+      <url>/2022/11/06/%E6%A1%88%E4%BE%8B4%20Power%20supply%E7%94%B5%E6%BA%90%E6%A1%88%E4%BE%8B/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="案例4-Power-supply电源案例"><a href="#案例4-Power-supply电源案例" class="headerlink" title="案例4 Power supply电源案例"></a>案例4 Power supply电源案例</h2><hr><h2 id="MCAD数据集成"><a href="#MCAD数据集成" class="headerlink" title="MCAD数据集成"></a>MCAD数据集成</h2><hr><h3 id="FloMCAD-bridge功能模块"><a href="#FloMCAD-bridge功能模块" class="headerlink" title="FloMCAD  bridge功能模块"></a>FloMCAD  bridge功能模块</h3><ol><li>支持原始*.sat,<em>.igs,</em>.stp,<em>.stl,</em>.dxf文件格式</li><li>支持其他软件：PRoE,CATIA，Solidworks</li></ol><h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><h4 id="流程一："><a href="#流程一：" class="headerlink" title="流程一："></a>流程一：</h4><ol><li>导入3D cad文件</li><li>简化模型细节（孔洞、零件）</li><li>用Smartpart自带的箱体、风扇、散热器原件及长方体等去代替</li><li>导入Flotherm</li></ol><h4 id="流程二："><a href="#流程二：" class="headerlink" title="流程二："></a>流程二：</h4><ol><li>导入3D cad文件</li><li>简化模型细节（孔洞、零件）</li><li>像素化模型</li><li>导入Flotherm </li></ol><h3 id="Power-supply案例"><a href="#Power-supply案例" class="headerlink" title="Power supply案例"></a>Power supply案例</h3><hr><h4 id="CAD文件导入"><a href="#CAD文件导入" class="headerlink" title="CAD文件导入"></a>CAD文件导入</h4><ol><li>软件左侧启动MCAD  bridge模块</li><li>点击external外部，导入STEP文件，选择自带案例power_supply_asm.stp</li></ol><h4 id="模型部件简化"><a href="#模型部件简化" class="headerlink" title="模型部件简化"></a>模型部件简化</h4><p>顶盖孔板简化</p><ol><li>以此选择孔板对角边缘，右键单个对象选择perforated plate孔板，替换为smartparts plate</li><li>选中新生成两个孔板，点击左侧传输组件至主模型</li></ol><hr><p>顶盖模型棱角零件简化</p><ol><li>点击左侧global simplify全局简化，参数默认</li><li>移除小孔、凸起、非平面、生成水平面等</li></ol><hr><h4 id="部件像素化"><a href="#部件像素化" class="headerlink" title="部件像素化"></a>部件像素化</h4><p>顶盖部件像素化</p><ol><li>选中顶盖TOP_COVER部件，点击左侧voxlize像素化或右键，按最小单元数20</li><li>选中新生成TOP_COVER顶盖组合，点击左侧传输组件至主模型</li></ol><hr><p>连接件像素化</p><ol><li>继续global simplify全局简化连接件</li><li>像素化，点击左侧传输组件至主模型</li></ol><hr><p>PCB部件处理</p><ol><li>选中PCB部件，右键使用单个对象自带smartparts里的PCB</li><li>选中新生成的PCB组合，点击左侧传输组件至主模型</li></ol><hr><p>底盖部件处理</p><ol><li>选中底盖部件base，右键使用单个对象自带smartparts里的包容长方体bounding cuboid</li><li>选中新生成的底盖组合base，点击左侧传输组件至主模型</li></ol><hr><p>螺栓部件</p><ol><li>影响较小，无需处理</li></ol><hr><p>关闭舍弃MCAD  bridge模块窗口</p><h4 id="模型参数设置"><a href="#模型参数设置" class="headerlink" title="模型参数设置"></a>模型参数设置</h4><p>顶盖孔板设置</p><ol><li>选中power_supply_asm模型，点击附件attachment统一设置材料类型为steel（mid）</li><li>选中TOP_COVER里孔板，设置构造，孔类型圆形，直径5mm，间距7.2</li></ol><hr><p>PCB设置</p><ol><li>PCB_1参数暂时使用默认</li></ol><hr><p>PCB热源添加</p><ol><li>选中PCB_1，点击添加元件Component按钮，生成Component</li><li>设置构造功率为10W，应用于板均匀发热</li><li>添加PCB_1监测点</li></ol><h4 id="模型物理位置"><a href="#模型物理位置" class="headerlink" title="模型物理位置"></a>模型物理位置</h4><p>模型旋转</p><ol><li>x轴视图显示，逆时针旋转</li></ol><hr><p>模型对齐</p><ol><li>x轴视图显示，依次选择psu heat 及power_supply_asm组合，点击对齐，居中对齐</li><li>z轴视图显示，左右对齐</li></ol><h4 id="部件停用"><a href="#部件停用" class="headerlink" title="部件停用"></a>部件停用</h4><p>PSU部件停用</p><ol><li>选择停用部件PSU，在位置设置里选择停用，但网格存在</li><li>如还需停用网格，选择忽略几何体</li></ol>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Flotherm </tag>
+            
+        </tags>
       
     </entry>
     
@@ -18,8 +24,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2022/12/28/hello-world/"/>
-      <url>/2022/12/28/hello-world/</url>
+      <link href="/2022/01/01/hello-world/"/>
+      <url>/2022/01/01/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>可转债</title>
+      <link href="/2023/01/09/%E5%8F%AF%E8%BD%AC%E5%80%BA/"/>
+      <url>/2023/01/09/%E5%8F%AF%E8%BD%AC%E5%80%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="可转债"><a href="#可转债" class="headerlink" title="可转债"></a>可转债</h2><h3 id="本质："><a href="#本质：" class="headerlink" title="本质："></a>本质：</h3><ol><li>可转换公司债券，在一定期间内一句约定的条件可以转换成股份的公司债券</li><li>转换前债券性质，可以获得本金偿还和票面利息，转换后等同一定量股票</li><li>违约性风险低，与发行公司股票关联</li></ol><h3 id="目的："><a href="#目的：" class="headerlink" title="目的："></a>目的：</h3><ol><li>公司低息借投资者钱（2%利率）</li><li>让投资者把债券转换股票变成股东</li></ol><h3 id="属性名词"><a href="#属性名词" class="headerlink" title="属性名词"></a>属性名词</h3><ol><li><strong>价格：</strong>每张100元，沪市一手10张，打新上限1000手；</li><li><strong>债转评级：</strong>A+，AA-，AA，AA+，AAA</li><li><strong>到期日：</strong>一般发行期限是6年</li><li><strong>转股价：</strong>转换股票使用的价格，转后股数=债券数*100/转股价。</li><li><strong>可转债下修：</strong>当公司股票价格在任意连续30个交易日中有15个交易日的收盘价低于当期转股价85%时，公司有权下调转股价</li><li><strong>到期赎回价：</strong>债券到期后，卷面价格，应大于100元（比如109）。</li><li><strong>强制赎回：</strong>当公司股票价格在任意连续30个交易日中有15个交易日的收盘价不低于当期转股价130%时，公司可选择按照到期赎回价赎回债券（这时强制赎回对投资者来说是亏的）</li><li><strong>回售价：</strong>100+利息，发行公告会说明每年利率</li><li><strong>回售：</strong>在本次发行的可转债公司债券最后两个计息年度，如果公司股票在任意连续30个交易日低于当期转转股价70%时，<strong>按回售价回收</strong></li></ol><h3 id="投资规则"><a href="#投资规则" class="headerlink" title="投资规则"></a><strong>投资规则</strong></h3><ol><li><p>当股票价格大于当期转股价时</p><p>收益：转股（6个月以后 ）&gt;强制赎回</p></li><li><p>当股票价格低于转股价时</p><p>收益：回售(最后两年才有，公司付钱回收，一般不会)&gt; 转股</p></li><li><p>强制赎回：占绝大多数</p></li></ol><h3 id="计算公式"><a href="#计算公式" class="headerlink" title="计算公式"></a>计算公式</h3><ol><li>转股价值：换算成债券价值大概值多少钱，一般小于卷面价值100，20%-30%溢价<br>$$<br>实际卷面转股价值=正股价格*100/转股价<br>$$</li><li>溢价率：一般20%-30%溢价<br>$$<br>溢价率=正股价格*100/转股价<br>$$</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 理财 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>案例4 Power supply电源案例</title>
       <link href="/2022/11/06/%E6%A1%88%E4%BE%8B4%20Power%20supply%E7%94%B5%E6%BA%90%E6%A1%88%E4%BE%8B/"/>
       <url>/2022/11/06/%E6%A1%88%E4%BE%8B4%20Power%20supply%E7%94%B5%E6%BA%90%E6%A1%88%E4%BE%8B/</url>

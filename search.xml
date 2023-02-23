@@ -4,11 +4,36 @@
   
     
     <entry>
-      <title>Flotherm基础教程一</title>
-      <link href="/posts/20230223131733-c3de87f3.html"/>
-      <url>/posts/20230223131733-c3de87f3.html</url>
+      <title>新能源汽车系列1</title>
+      <link href="/posts/20230223164819-a94de7f.html"/>
+      <url>/posts/20230223164819-a94de7f.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="三电系统"><a href="#三电系统" class="headerlink" title="三电系统"></a>三电系统</h1><h2 id="电机"><a href="#电机" class="headerlink" title="电机"></a>电机</h2><p>三相交流异步电机<br>三相交流永磁同步电机</p><h2 id="电池"><a href="#电池" class="headerlink" title="电池"></a>电池</h2><h2 id="电控"><a href="#电控" class="headerlink" title="电控"></a>电控</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 新能源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 热管理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Flotherm系列1</title>
+      <link href="/posts/20230223131733-8340c66e.html"/>
+      <url>/posts/20230223131733-8340c66e.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><p>重力方向：-y<br>表格<br>曲线残差<br>MCAD</p>]]></content>
       
       
       <categories>

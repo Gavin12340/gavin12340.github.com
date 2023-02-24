@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>新能源汽车系列1</title>
-      <link href="/posts/20230223164819-a94de7f.html"/>
-      <url>/posts/20230223164819-a94de7f.html</url>
+      <title>新能源汽车系列（一）</title>
+      <link href="/posts/20230223164819-ff1d74b8.html"/>
+      <url>/posts/20230223164819-ff1d74b8.html</url>
       
-        <content type="html"><![CDATA[<h1 id="三电系统"><a href="#三电系统" class="headerlink" title="三电系统"></a>三电系统</h1><h2 id="电机"><a href="#电机" class="headerlink" title="电机"></a>电机</h2><p>三相交流异步电机<br>三相交流永磁同步电机</p><h2 id="电池"><a href="#电池" class="headerlink" title="电池"></a>电池</h2><h2 id="电控"><a href="#电控" class="headerlink" title="电控"></a>电控</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="三电系统"><a href="#三电系统" class="headerlink" title="三电系统"></a>三电系统</h1><h2 id="电机"><a href="#电机" class="headerlink" title="电机"></a>电机</h2><h3 id="三相交流异步电机"><a href="#三相交流异步电机" class="headerlink" title="三相交流异步电机"></a>三相交流异步电机</h3><p>优点：过载能力强，耐高温<br>缺点：高能耗</p><h3 id="三相交流永磁同步电机"><a href="#三相交流永磁同步电机" class="headerlink" title="三相交流永磁同步电机"></a>三相交流永磁同步电机</h3><p>优点：高效、省电进而续航能力增加，低转速扭矩高<br>缺点：成本高，高温退磁，高转速扭矩低</p><h3 id="以特斯拉Model-Y为例："><a href="#以特斯拉Model-Y为例：" class="headerlink" title="以特斯拉Model Y为例："></a>以特斯拉Model Y为例：</h3><p>设置电机、电机控制器、减速器三合一电驱系统<br>电机+减速器采用油冷散热，辅助油水热交换器，油泵可调，进一步提高散热能力</p><h3 id="以蔚来EC6为例："><a href="#以蔚来EC6为例：" class="headerlink" title="以蔚来EC6为例："></a>以蔚来EC6为例：</h3><p>仅电机采用采用水冷散热，无法管理减速器热量，</p><h2 id="电池"><a href="#电池" class="headerlink" title="电池"></a>电池</h2><h3 id="保险装置"><a href="#保险装置" class="headerlink" title="保险装置"></a>保险装置</h3><p>当高压部件出现电流过载、过充、过放以及事故触发碰撞信号时，BMS及时触发保险装置切断高压电源<br>燃爆式：快<br>热熔式：慢</p><h3 id="压力平衡单元"><a href="#压力平衡单元" class="headerlink" title="压力平衡单元"></a>压力平衡单元</h3><p>平衡电池内外不压力差</p><h2 id="电控-电池管理系统BMS"><a href="#电控-电池管理系统BMS" class="headerlink" title="电控-电池管理系统BMS"></a>电控-电池管理系统BMS</h2>]]></content>
       
       
       <categories>
@@ -29,7 +29,7 @@
     
     
     <entry>
-      <title>Flotherm系列1</title>
+      <title>Flotherm系列（一）</title>
       <link href="/posts/20230223131733-8340c66e.html"/>
       <url>/posts/20230223131733-8340c66e.html</url>
       

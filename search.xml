@@ -129,6 +129,31 @@
     
     
     <entry>
+      <title>Flotherm基础系列（四）</title>
+      <link href="/posts/20230106160644-1366d62f.html"/>
+      <url>/posts/20230106160644-1366d62f.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="4-Power-supply电源案例"><a href="#4-Power-supply电源案例" class="headerlink" title="4 Power supply电源案例"></a>4 Power supply电源案例</h2><hr><h2 id="MCAD数据集成"><a href="#MCAD数据集成" class="headerlink" title="MCAD数据集成"></a>MCAD数据集成</h2><hr><h3 id="FloMCAD-bridge功能模块"><a href="#FloMCAD-bridge功能模块" class="headerlink" title="FloMCAD  bridge功能模块"></a>FloMCAD  bridge功能模块</h3><ol><li>支持原始*.sat,<em>.igs,</em>.stp,<em>.stl,</em>.dxf文件格式</li><li>支持其他软件：PRoE,CATIA，Solidworks</li></ol><h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><h4 id="流程一："><a href="#流程一：" class="headerlink" title="流程一："></a>流程一：</h4><ol><li>导入3D cad文件</li><li>简化模型细节（孔洞、零件）</li><li>用Smartpart自带的箱体、风扇、散热器原件及长方体等去代替</li><li>导入Flotherm</li></ol><h4 id="流程二："><a href="#流程二：" class="headerlink" title="流程二："></a>流程二：</h4><ol><li>导入3D cad文件</li><li>简化模型细节（孔洞、零件）</li><li>像素化模型</li><li>导入Flotherm </li></ol><h3 id="Power-supply案例"><a href="#Power-supply案例" class="headerlink" title="Power supply案例"></a>Power supply案例</h3><hr><h4 id="CAD文件导入"><a href="#CAD文件导入" class="headerlink" title="CAD文件导入"></a>CAD文件导入</h4><ol><li>软件左侧启动MCAD  bridge模块</li><li>点击external外部，导入STEP文件，选择自带案例power_supply_asm.stp</li></ol><h4 id="模型部件简化"><a href="#模型部件简化" class="headerlink" title="模型部件简化"></a>模型部件简化</h4><p>顶盖孔板简化</p><ol><li>以此选择孔板对角边缘，右键单个对象选择perforated plate孔板，替换为smartparts plate</li><li>选中新生成两个孔板，点击左侧传输组件至主模型</li></ol><hr><p>顶盖模型棱角零件简化</p><ol><li>点击左侧global simplify全局简化，参数默认</li><li>移除小孔、凸起、非平面、生成水平面等</li></ol><hr><h4 id="部件像素化"><a href="#部件像素化" class="headerlink" title="部件像素化"></a>部件像素化</h4><p>顶盖部件像素化</p><ol><li>选中顶盖TOP_COVER部件，点击左侧voxlize像素化或右键，按最小单元数20</li><li>选中新生成TOP_COVER顶盖组合，点击左侧传输组件至主模型</li></ol><hr><p>连接件像素化</p><ol><li>继续global simplify全局简化连接件</li><li>像素化，点击左侧传输组件至主模型</li></ol><hr><p>PCB部件处理</p><ol><li>选中PCB部件，右键使用单个对象自带smartparts里的PCB</li><li>选中新生成的PCB组合，点击左侧传输组件至主模型</li></ol><hr><p>底盖部件处理</p><ol><li>选中底盖部件base，右键使用单个对象自带smartparts里的包容长方体bounding cuboid</li><li>选中新生成的底盖组合base，点击左侧传输组件至主模型</li></ol><hr><p>螺栓部件</p><ol><li>影响较小，无需处理</li></ol><hr><p>关闭舍弃MCAD  bridge模块窗口</p><h4 id="模型参数设置"><a href="#模型参数设置" class="headerlink" title="模型参数设置"></a>模型参数设置</h4><p>顶盖孔板设置</p><ol><li>选中power_supply_asm模型，点击附件attachment统一设置材料类型为steel（mid）</li><li>选中TOP_COVER里孔板，设置构造，孔类型圆形，直径5mm，间距7.2</li></ol><hr><p>PCB设置</p><ol><li>PCB_1参数暂时使用默认</li></ol><hr><p>PCB热源添加</p><ol><li>选中PCB_1，点击添加元件Component按钮，生成Component</li><li>设置构造功率为10W，应用于板均匀发热</li><li>添加PCB_1监测点</li></ol><h4 id="模型物理位置"><a href="#模型物理位置" class="headerlink" title="模型物理位置"></a>模型物理位置</h4><p>模型旋转</p><ol><li>x轴视图显示，逆时针旋转</li></ol><hr><p>模型对齐</p><ol><li>x轴视图显示，依次选择psu heat 及power_supply_asm组合，点击对齐，居中对齐</li><li>z轴视图显示，左右对齐</li></ol><h4 id="部件停用"><a href="#部件停用" class="headerlink" title="部件停用"></a>部件停用</h4><p>PSU部件停用</p><ol><li>选择停用部件PSU，在位置设置里选择停用，但网格存在</li><li>如还需停用网格，选择忽略几何体</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Flotherm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Flotherm基础系列（一）</title>
       <link href="/posts/20230105131733-8340c66e.html"/>
       <url>/posts/20230105131733-8340c66e.html</url>
@@ -159,31 +184,6 @@
       <url>/posts/20230101000000-37a952e4.html</url>
       
         <content type="html"><![CDATA[<h2 id="一、热源"><a href="#一、热源" class="headerlink" title="一、热源"></a>一、热源</h2><p>笔记本电脑的主要功率器件是CPU(英文全称Central Processing Unit，即中央处理器)和GPU(英文全称Graphics Processing Unit，即显卡)，散热系统设计的主要目的是把CPU和GPU产生的热量导出笔记本电脑外部。受限于笔记本电脑紧凑的空间，需要通过导热板、热管等传热器件把热量通过热传递方式扩散到外部环境。</p><p><img src="https://s2.loli.net/2023/02/12/AGaH3pKw7FeLjcT.jpg" alt="fans.jpg"></p><h2 id="二、散热方式"><a href="#二、散热方式" class="headerlink" title="二、散热方式"></a>二、散热方式</h2><h3 id="a-自然冷却"><a href="#a-自然冷却" class="headerlink" title="a. 自然冷却"></a>a. 自然冷却</h3><p>笔记本电脑里的导热板、肋片和金属/非金属外壳通过热传递的方式把热量从高温区域导出到低温区域就是常用的自然冷却方式散热。自然冷却的极限是器件表面热流密度小于0.039W/cmz，大多数小型电子元器件己经足够，高功率器件的表面热流密度可以达到0.078W/cmZ[iol，自然冷却无法保证其工作的可靠性。</p><h3 id="b-强迫冷却"><a href="#b-强迫冷却" class="headerlink" title="b. 强迫冷却"></a>b. 强迫冷却</h3><p>强迫冷却包括强迫风冷和强迫液体冷却。</p><p>笔记本电脑中通过风扇实现，风扇叶片的高速旋转在离心风扇腔体内形成风压，引起空气流动达到传输热量的目的。强迫液体冷却是由水泵、管道、冷却块和水组成循环流动的封闭水路，通过水循环带走热量。</p><p>具体形式为：在CUP和GPU上涂上散热硅脂，然后覆盖导热板，叠加热管，热管的另一端是散热风扇。散热器件覆盖的面积越大，散热效果越好。</p><p>键盘对流散热也是一种普遍采用的散热方式。键盘底部覆盖一层多孔铝板，主板产生的热量通过金属传递到键盘周围。当敲击键盘时，热空气通过键盘孔隙将热量排出，形成笔记本电脑内部和外部环境的空气对流，从而达到散热的目的。</p><p>此外，笔记本电脑的金属外壳(一般是铝镁合金)也是一种重要的散热方式。由于金属自身优良的热传导性能，笔记本电脑内部的热量经由金属外壳传导到周围空气中，可以有效降低笔记本电脑内部温度，降低内部散热系统的工作压力，起到节省能源和降低风扇工作噪音的双重效果。</p><h3 id="c-热管传热"><a href="#c-热管传热" class="headerlink" title="c. 热管传热"></a>c. 热管传热</h3><p>​    热管传热主要利用热管的高导热性，将热量从热管的蒸发端传递到冷凝端，实现热量的转移。工作时常伴随着热管壁上的热传导和内部工质的相变传热，因此传热效率要比普通金属高很多。通过热管轴向上分布的蒸发端、绝热段、冷凝端的配合，热量由工质相变携带从蒸发端传递到冷凝端，经过热管内部的毛细结构回流到冷凝端，形成热传递的回路，循环往复工作。</p><h3 id="d-热电制冷"><a href="#d-热电制冷" class="headerlink" title="d. 热电制冷"></a>d. 热电制冷</h3><p>​    热电致冷是一种能产生负热阻的制冷技术。热电制冷技术是帕尔贴效应的在散热中的应用，当P-N型半导体材料构成电偶，接通直流电后在P-N结点发生的吸放热现象。优点是不需要外界动力、且可靠性高;缺点是重量大、效率低。</p><h2 id="三、逻辑原理"><a href="#三、逻辑原理" class="headerlink" title="三、逻辑原理"></a>三、逻辑原理</h2><p>风扇的转速根据CPU和GPU的温度来设定，当芯片温度升高到系统设置的某一温度时，风扇的转速就会提高。当风扇转速己经达到工作的最高频率，芯片温度还没有降下来时，芯片会自动降频，以避免损毁。</p><p>热管由管壳、吸液芯和工质组成，热管的一端为蒸发端，另一端为冷凝端。热管的一端受热时，工质蒸发汽化带走热量，在毛细压力差的作用下流向冷凝端，蒸汽在冷凝端遇冷液化释放热量，工质液体回流到蒸发端，直到蒸发端的温度不足以使工质汽化。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Study </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Flotherm </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Flotherm基础系列（四）</title>
-      <link href="/posts/20220106160644-1366d62f.html"/>
-      <url>/posts/20220106160644-1366d62f.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="4-Power-supply电源案例"><a href="#4-Power-supply电源案例" class="headerlink" title="4 Power supply电源案例"></a>4 Power supply电源案例</h2><hr><h2 id="MCAD数据集成"><a href="#MCAD数据集成" class="headerlink" title="MCAD数据集成"></a>MCAD数据集成</h2><hr><h3 id="FloMCAD-bridge功能模块"><a href="#FloMCAD-bridge功能模块" class="headerlink" title="FloMCAD  bridge功能模块"></a>FloMCAD  bridge功能模块</h3><ol><li>支持原始*.sat,<em>.igs,</em>.stp,<em>.stl,</em>.dxf文件格式</li><li>支持其他软件：PRoE,CATIA，Solidworks</li></ol><h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><h4 id="流程一："><a href="#流程一：" class="headerlink" title="流程一："></a>流程一：</h4><ol><li>导入3D cad文件</li><li>简化模型细节（孔洞、零件）</li><li>用Smartpart自带的箱体、风扇、散热器原件及长方体等去代替</li><li>导入Flotherm</li></ol><h4 id="流程二："><a href="#流程二：" class="headerlink" title="流程二："></a>流程二：</h4><ol><li>导入3D cad文件</li><li>简化模型细节（孔洞、零件）</li><li>像素化模型</li><li>导入Flotherm </li></ol><h3 id="Power-supply案例"><a href="#Power-supply案例" class="headerlink" title="Power supply案例"></a>Power supply案例</h3><hr><h4 id="CAD文件导入"><a href="#CAD文件导入" class="headerlink" title="CAD文件导入"></a>CAD文件导入</h4><ol><li>软件左侧启动MCAD  bridge模块</li><li>点击external外部，导入STEP文件，选择自带案例power_supply_asm.stp</li></ol><h4 id="模型部件简化"><a href="#模型部件简化" class="headerlink" title="模型部件简化"></a>模型部件简化</h4><p>顶盖孔板简化</p><ol><li>以此选择孔板对角边缘，右键单个对象选择perforated plate孔板，替换为smartparts plate</li><li>选中新生成两个孔板，点击左侧传输组件至主模型</li></ol><hr><p>顶盖模型棱角零件简化</p><ol><li>点击左侧global simplify全局简化，参数默认</li><li>移除小孔、凸起、非平面、生成水平面等</li></ol><hr><h4 id="部件像素化"><a href="#部件像素化" class="headerlink" title="部件像素化"></a>部件像素化</h4><p>顶盖部件像素化</p><ol><li>选中顶盖TOP_COVER部件，点击左侧voxlize像素化或右键，按最小单元数20</li><li>选中新生成TOP_COVER顶盖组合，点击左侧传输组件至主模型</li></ol><hr><p>连接件像素化</p><ol><li>继续global simplify全局简化连接件</li><li>像素化，点击左侧传输组件至主模型</li></ol><hr><p>PCB部件处理</p><ol><li>选中PCB部件，右键使用单个对象自带smartparts里的PCB</li><li>选中新生成的PCB组合，点击左侧传输组件至主模型</li></ol><hr><p>底盖部件处理</p><ol><li>选中底盖部件base，右键使用单个对象自带smartparts里的包容长方体bounding cuboid</li><li>选中新生成的底盖组合base，点击左侧传输组件至主模型</li></ol><hr><p>螺栓部件</p><ol><li>影响较小，无需处理</li></ol><hr><p>关闭舍弃MCAD  bridge模块窗口</p><h4 id="模型参数设置"><a href="#模型参数设置" class="headerlink" title="模型参数设置"></a>模型参数设置</h4><p>顶盖孔板设置</p><ol><li>选中power_supply_asm模型，点击附件attachment统一设置材料类型为steel（mid）</li><li>选中TOP_COVER里孔板，设置构造，孔类型圆形，直径5mm，间距7.2</li></ol><hr><p>PCB设置</p><ol><li>PCB_1参数暂时使用默认</li></ol><hr><p>PCB热源添加</p><ol><li>选中PCB_1，点击添加元件Component按钮，生成Component</li><li>设置构造功率为10W，应用于板均匀发热</li><li>添加PCB_1监测点</li></ol><h4 id="模型物理位置"><a href="#模型物理位置" class="headerlink" title="模型物理位置"></a>模型物理位置</h4><p>模型旋转</p><ol><li>x轴视图显示，逆时针旋转</li></ol><hr><p>模型对齐</p><ol><li>x轴视图显示，依次选择psu heat 及power_supply_asm组合，点击对齐，居中对齐</li><li>z轴视图显示，左右对齐</li></ol><h4 id="部件停用"><a href="#部件停用" class="headerlink" title="部件停用"></a>部件停用</h4><p>PSU部件停用</p><ol><li>选择停用部件PSU，在位置设置里选择停用，但网格存在</li><li>如还需停用网格，选择忽略几何体</li></ol>]]></content>
       
       
       <categories>

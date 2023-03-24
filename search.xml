@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Python笔记</title>
+      <link href="/posts/20230324000000-d83aff49.html"/>
+      <url>/posts/20230324000000-d83aff49.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-number">111</span><br><span class="hljs-number">222</span><br><span class="hljs-number">1</span>+<span class="hljs-number">2</span><br><span class="hljs-number">1</span>/<span class="hljs-number">2</span><br><span class="hljs-number">10</span>*<span class="hljs-number">5</span><br></code></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-number">8</span>/<span class="hljs-number">2</span>)<br><span class="hljs-built_in">print</span>(<span class="hljs-number">10</span>+<span class="hljs-number">5</span>)<br><span class="hljs-built_in">print</span>(<span class="hljs-number">10</span>*<span class="hljs-number">10</span>)<br></code></pre></td></tr></table></figure><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 单双引号均可，嵌套区分使用</span><br><span class="hljs-string">&quot;你好&quot;</span><br><span class="hljs-string">&#x27;你好&#x27;</span><br><span class="hljs-comment"># 三引号支持换行识别</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;&#x27;&#x27;你好，</span><br><span class="hljs-string">欢迎</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span> )<br><span class="hljs-string">&quot;&quot;&quot;ni&#x27;hao&quot;&quot;&quot;</span> <span class="hljs-comment"># 支持换行识别</span><br></code></pre></td></tr></table></figure><h2 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h2><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-number">100</span>&gt;<span class="hljs-number">10</span> <span class="hljs-comment"># true</span><br><span class="hljs-number">9</span>&gt;<span class="hljs-number">10</span> <span class="hljs-comment"># false</span><br><span class="hljs-string">&quot;root&quot;</span>==<span class="hljs-number">123</span> <span class="hljs-comment"># false</span><br></code></pre></td></tr></table></figure><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2><h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小问题</title>
       <link href="/posts/20230322135154-50f6df8.html"/>
       <url>/posts/20230322135154-50f6df8.html</url>

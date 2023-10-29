@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>增量式PID算法</title>
+      <link href="/posts/20231029000000-6b2b3dc0.html"/>
+      <url>/posts/20231029000000-6b2b3dc0.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>注意：本文基于GPT4模型生成</p></blockquote><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul><li>增量式PID算法是一种基于PID控制原理的算法，它通过计算当前误差与前两次误差的增量来调节控制量，从而实现对被控对象的控制。</li><li>增量式PID算法的优点是计算简单，适用于微处理器的实现。</li><li>增量式PID算法的缺点是对采样周期的要求较高，且存在积分饱和和微分冲击的问题。</li></ul><h1 id="增量式PID算法公式"><a href="#增量式PID算法公式" class="headerlink" title="增量式PID算法公式"></a>增量式PID算法公式</h1><p>增量式PID算法是一种常用的控制算法，它可以根据系统的偏差和变化率来调节控制量，从而实现对系统的闭环控制。增量式PID算法的基本原理是：在每个采样周期内，计算系统的偏差（期望值与实际值之差）和偏差的变化率，然后根据增量式PID公式来计算控制量的增量，最后将控制量的增量累加到上一个采样周期的控制量上，得到当前采样周期的控制量。</p><p>增量式PID公式如下：</p><figure class="highlight gcode"><table><tr><td class="code"><pre><code class="hljs gcode">Δu<span class="hljs-comment">(k)</span> = Kp[e<span class="hljs-comment">(k)</span> - e<span class="hljs-comment">(k-1)</span>] + Ki*e<span class="hljs-comment">(k)</span> + Kd[e<span class="hljs-comment">(k)</span> - <span class="hljs-number">2</span>e<span class="hljs-comment">(k-1)</span> + e<span class="hljs-comment">(k-2)</span>]<br>其中，Δu<span class="hljs-comment">(k)</span>是当前控制量的增量，Kp、Ki、Kd是比例、积分、微分系数，e<span class="hljs-comment">(k)</span>是当前误差，e<span class="hljs-comment">(k-1)</span>是上一次误差，e<span class="hljs-comment">(k-2)</span>是上上次误差。<br></code></pre></td></tr></table></figure><h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><p>本文将介绍如何使用增量式PID算法来控制一个简单的温度控制系统，该系统由一个加热器、一个温度传感器和一个风扇组成，目标是使温度保持在设定值附近。首先，我们需要确定系统的数学模型，即温度与控制量之间的关系。假设温度传感器可以准确地测量温度，并且忽略环境温度和其他因素的影响，那么我们可以用下面的一阶线性微分方程来描述系统：</p><p>dT/dt = a<em>u - b</em>T</p><p>其中，T是温度，u是控制量（加热器功率减去风扇功率），a和b是常数。为了方便计算，我们可以将微分方程离散化，得到下面的差分方程：</p><p>T(k+1) = T(k) + h*(a<em>u(k) - b</em>T(k))</p><p>其中，h是采样周期，k是采样次数。然后，我们可以根据差分方程和增量式PID公式来设计控制器，并编写相应的程序。程序的主要流程如下：</p><ol><li>初始化变量和参数，包括温度设定值、当前温度、当前控制量、上一个控制量、当前偏差、上一个偏差、上上一个偏差、比例系数、积分系数、微分系数等。</li><li>进入循环，在每个采样周期内执行以下步骤：<ol><li>读取当前温度，并计算当前偏差。</li><li>根据增量式PID公式计算控制量增量，并累加到上一个控制量上得到当前控制量。</li><li>将当前控制量输出到加热器和风扇，并限制其范围在合理的区间内。</li><li>更新变量和参数，包括当前控制量、上一个控制量、当前偏差、上一个偏差、上上一个偏差等。</li><li>延时一定的时间，等待下一个采样周期。</li></ol></li><li>退出循环，结束程序。</li></ol><p>通过这样的程序，我们可以实现对温度的闭环控制，使其保持在设定值附近，同时避免过大的超调和震荡。当然，为了获得更好的控制效果，我们还需要根据系统的实际情况来调节PID参数，这是一个需要经验和技巧的过程，有兴趣的读者可以自行尝试和优化。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Control </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PID </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python venv虚拟环境</title>
       <link href="/posts/20231022000000-d0701127.html"/>
       <url>/posts/20231022000000-d0701127.html</url>
